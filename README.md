@@ -3,7 +3,7 @@ TaintAll, a taint analysis and concolic execution tool.
 
 # Installation
 - Install boost >= 1.5
-- Install pin >= 2.14
+- Install pin = 2.14
 - cd your_pin_path/source/tools
 - git clone https://github.com/onura/TaintAll.git
 - cd TaintAll

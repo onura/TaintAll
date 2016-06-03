@@ -14,45 +14,45 @@ TaintAll, a taint analysis and concolic execution tool.
 
 # Usage
 - init plugin
-´´´python
+```python
 t = ta_plugin()
 t.run(1)
-´´´
+```
 - start tainting at the address
-´´´python
+```python
 t.a.startTaintAt(0x100000EB0)
-´´´
+```
 - stop tainting at the address
-´´´python
+```python
 t.a.stopTaintAt(0x100000F41)
-´´´
+```
 - taint 5 bytes from the address that RSI register is pointing to
-´´´python
+```python
 t.a.taintPointer(0x100000F17, Registers.RSI, 5)
-´´´
+```
 - taint EAX registers
-´´´python
+```python
 t.a.taintRegister(0x100000BBC, Registers.RAX, RegParts.DWORD)
-´´´
+```
 - taint 4 bytes from the memory 0x100000992
-´´´python
+```python
 t.a.taintAddress(0x100000BBC, 0x100000992, 4)
-´´´
+```
 - start analysis
-´´´python
+```python
 t.a.startDynamicAnalysis()
-´´´
+```
 - show/hide taints
-´´´python
+```python
 t.a.hideTaints()
 t.a.showTaints()
-´´´
+```
 - print tainted registers/memories at the address which the cursor is pointing
-´´´python
+```python
 t.a.printRegsEA()
 t.a.printMemsEA()
-´´´
+```
 - print all affected addresses
-´´´python
+```python
 t.a.printAffectedAddrs()
-´´´
+```

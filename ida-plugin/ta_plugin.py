@@ -83,7 +83,7 @@ class TaintAll(object):
     """TaintAll"""
 
     PIN_PATH = CONF_PIN_PATH + "/pin"
-    TA_PATH = CONF_PIN_PATH + "source/tools/TaintAll/obj-intel64/main.dylib"
+    TA_PATH = CONF_PIN_PATH + "/source/tools/TaintAll/obj-intel64/main.dylib"
     TARGET_FILE = None
     TARGET_PATH = None
     RESULT_FILE = "results.ta"
